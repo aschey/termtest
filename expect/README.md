@@ -7,10 +7,10 @@ This is a fork of the original repository [Netflix/go-expect](https://github.com
 Relevant additions:
 
 - Windows support (Windows 10 and Windows Sever 2019 only)
-- `expect.Console` is created with [xpty](https://github.com/ActiveState/termtest/xpty) allowing testing of applications that want to talk to an `xterm`-compatible terminal
+- `expect.Console` is created with [xpty](https://github.com/aschey/termtest/xpty) allowing testing of applications that want to talk to an `xterm`-compatible terminal
 - Filter out VT control characters in output. This is important for Windows support, as the windows pseudo-console creates lots of control-characters that can break up words.
 
-See also [ActiveState/termtest](https://github.com/ActiveState/termtest) for a library that uses this package, but adds more life-cycle management.
+See also [ActiveState/termtest](https://github.com/aschey/termtest) for a library that uses this package, but adds more life-cycle management.
 
 ## Usage
 
@@ -25,7 +25,7 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/ActiveState/termtest/expect"
+	"github.com/aschey/termtest/expect"
 )
 
 func main() {
@@ -73,7 +73,7 @@ import (
 
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/ActiveState/termtest/expect"
+	"github.com/aschey/termtest/expect"
 )
 
 func getPassword(fd int) string {

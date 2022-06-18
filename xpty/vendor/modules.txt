@@ -1,6 +1,6 @@
-# github.com/ActiveState/termtest/conpty v0.5.0 => ../conpty
+# github.com/aschey/termtest/conpty v0.5.0 => ../conpty
 ## explicit
-github.com/ActiveState/termtest/conpty
+github.com/aschey/termtest/conpty
 # github.com/ActiveState/vt10x v1.3.1
 ## explicit
 github.com/ActiveState/vt10x
@@ -34,4 +34,4 @@ golang.org/x/sys/unix
 golang.org/x/sys/windows
 # gopkg.in/yaml.v2 v2.2.2
 gopkg.in/yaml.v2
-# github.com/ActiveState/termtest/conpty => ../conpty
+# github.com/aschey/termtest/conpty => ../conpty

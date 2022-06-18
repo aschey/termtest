@@ -13,7 +13,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ActiveState/termtest/conpty"
+	"github.com/aschey/termtest/conpty"
 )
 
 func main() {

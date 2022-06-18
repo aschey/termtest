@@ -24,9 +24,9 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/ActiveState/termtest/expect/internal/osutils"
-	"github.com/ActiveState/termtest/xpty"
 	"github.com/ActiveState/vt10x"
+	"github.com/aschey/termtest/expect/internal/osutils"
+	"github.com/aschey/termtest/xpty"
 )
 
 // Console is an interface to automate input and output for interactive

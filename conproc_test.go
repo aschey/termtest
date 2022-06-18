@@ -16,8 +16,8 @@ import (
 	"testing"
 	"time"
 
-	expect "github.com/ActiveState/termtest/expect"
-	"github.com/ActiveState/termtest"
+	"github.com/aschey/termtest"
+	expect "github.com/aschey/termtest/expect"
 	"github.com/stretchr/testify/suite"
 )
 

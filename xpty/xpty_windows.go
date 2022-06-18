@@ -2,6 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file
 
+//go:build windows
 // +build windows
 
 package xpty
@@ -13,7 +14,7 @@ import (
 	"os/exec"
 	"syscall"
 
-	conpty "github.com/ActiveState/termtest/conpty"
+	conpty "github.com/aschey/termtest/conpty"
 )
 
 type impl struct {

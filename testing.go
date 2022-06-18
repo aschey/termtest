@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	expect "github.com/ActiveState/termtest/expect"
-	"github.com/ActiveState/termtest/internal/osutils/stacktrace"
+	expect "github.com/aschey/termtest/expect"
+	"github.com/aschey/termtest/internal/osutils/stacktrace"
 )
 
 // TestSendObserveFn is an example for a SendObserver function, it reports any error during Send calls to the supplied testing instance

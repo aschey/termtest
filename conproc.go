@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ActiveState/termtest/expect"
-	"github.com/ActiveState/termtest/internal/osutils"
+	"github.com/aschey/termtest/expect"
+	"github.com/aschey/termtest/internal/osutils"
 )
 
 var (

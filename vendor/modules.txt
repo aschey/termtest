@@ -1,11 +1,11 @@
-# github.com/ActiveState/termtest/conpty v0.5.0
-github.com/ActiveState/termtest/conpty
-# github.com/ActiveState/termtest/expect v0.7.0
+# github.com/aschey/termtest/conpty v0.5.0
+github.com/aschey/termtest/conpty
+# github.com/aschey/termtest/expect v0.7.0
 ## explicit
-github.com/ActiveState/termtest/expect
-github.com/ActiveState/termtest/expect/internal/osutils
-# github.com/ActiveState/termtest/xpty v0.6.0
-github.com/ActiveState/termtest/xpty
+github.com/aschey/termtest/expect
+github.com/aschey/termtest/expect/internal/osutils
+# github.com/aschey/termtest/xpty v0.6.0
+github.com/aschey/termtest/xpty
 # github.com/ActiveState/vt10x v1.3.1
 ## explicit
 github.com/ActiveState/vt10x

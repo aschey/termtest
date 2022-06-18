@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/ActiveState/termtest/conpty"
+	"github.com/aschey/termtest/conpty"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

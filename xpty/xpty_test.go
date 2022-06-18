@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ActiveState/termtest/xpty"
+	"github.com/aschey/termtest/xpty"
 	"github.com/stretchr/testify/require"
 )
 

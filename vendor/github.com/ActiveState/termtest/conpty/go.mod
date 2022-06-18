@@ -1,4 +1,4 @@
-module github.com/ActiveState/termtest/conpty
+module github.com/aschey/termtest/conpty
 
 go 1.12
 

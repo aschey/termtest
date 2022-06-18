@@ -5,7 +5,7 @@ console](https://devblogs.microsoft.com/commandline/windows-command-line-introdu
 in Go.
 
 Developed as part of the cross-platform terminal automation library
-[expect](https://github.com/ActiveState/termtest/expect) for the [ActiveState
+[expect](https://github.com/aschey/termtest/expect) for the [ActiveState
 state tool](https://www.activestate.com/products/platform/state-tool/).
 
 ## Example
@@ -20,4 +20,3 @@ terminal codes. See https://docs.microsoft.com/en-us/windows/console/setconsolem
 
 This package comes with a convenience function `InitTerminal()` that you can
 use in your client to set this option.
-
