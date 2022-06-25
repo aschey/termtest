@@ -33,6 +33,14 @@ func WithTimeout(timeout time.Duration) ExpectOpt {
 	}
 }
 
+// WithExpectTimeout sets a timeout for an Expect function to succeed
+func WithExpectTimeout(timeout time.Duration) ExpectOpt {
+	return func(opts *ExpectOpts) error {
+		opts.ExpectTimeout = &timeout
+		return nil
+	}
+}
+
 // ConsoleCallback is a callback function to execute if a match is found for
 // the chained matcher.
 type ConsoleCallback func(ms *MatchState) error
@@ -59,8 +67,9 @@ func (eo ExpectOpt) Then(f ConsoleCallback) ExpectOpt {
 
 // ExpectOpts provides additional options on Expect.
 type ExpectOpts struct {
-	Matchers    []Matcher
-	ReadTimeout *time.Duration
+	Matchers      []Matcher
+	ReadTimeout   *time.Duration
+	ExpectTimeout *time.Duration
 }
 
 // Match sequentially calls Match on all matchers in ExpectOpts and returns the

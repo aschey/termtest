@@ -72,6 +72,15 @@ func (c *Console) Expect(opts ...ExpectOpt) (string, error) {
 		readTimeout = options.ReadTimeout
 	}
 
+	expectTimeout := c.opts.ExpectTimeout
+	if options.ExpectTimeout != nil {
+		expectTimeout = options.ExpectTimeout
+	}
+
+	if expectTimeout != nil && readTimeout == nil {
+		readTimeout = expectTimeout
+	}
+
 	var matcher Matcher
 	var err error
 
@@ -84,8 +93,11 @@ func (c *Console) Expect(opts ...ExpectOpt) (string, error) {
 			observer(options.Matchers, c.MatchState, err)
 		}
 	}()
-
+	startTime := time.Now()
 	for {
+		if expectTimeout != nil && time.Now().Sub(startTime) > *expectTimeout {
+			return c.MatchState.Buf.String(), fmt.Errorf("Expect timeout exceeded")
+		}
 		if readTimeout != nil {
 			c.Pty.SetReadDeadline(time.Now().Add(*readTimeout))
 		}
