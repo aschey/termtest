@@ -85,6 +85,7 @@ type ConsoleOpts struct {
 	ExpectObservers []ExpectObserver
 	SendObservers   []SendObserver
 	ReadTimeout     *time.Duration
+	ExpectTimeout   *time.Duration
 	TermCols        int
 	TermRows        int
 }
@@ -164,6 +165,14 @@ func WithSendObserver(observers ...SendObserver) ConsoleOpt {
 func WithDefaultTimeout(timeout time.Duration) ConsoleOpt {
 	return func(opts *ConsoleOpts) error {
 		opts.ReadTimeout = &timeout
+		return nil
+	}
+}
+
+// WithDefaultExpectTimeout sets a default timeout for an Expect function to succeed
+func WithDefaultExpectTimeout(timeout time.Duration) ConsoleOpt {
+	return func(opts *ConsoleOpts) error {
+		opts.ExpectTimeout = &timeout
 		return nil
 	}
 }
